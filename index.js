@@ -4,6 +4,6 @@ module.exports = function() {
   var port = addr.port;
 
   var url = 'http://' + host + (port == 80 ? '' : (':' + port));
-  if (this._events && this._events.url && typeof this.emit == 'function') return this.emit('url', url);
+  if (this._events && this._events.url && typeof this.emit == 'function') return this.emit('url', url, {host:host, port:port}, addr);
   console.log('listening on ' + url);
 };
