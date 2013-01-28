@@ -1,11 +1,11 @@
 listen-url
 ==========
 ```javascript
-var http = require('http');
+var http = require('http')
 http.createServer(function(req, res) {
-  res.write('Hello, world!');
-  res.end();
-}).listen(0, require('listen-url'));
+  res.write('Hello, world!')
+  res.end()
+}).listen(0, require('listen-url'))
 ```
 
 output:
@@ -19,13 +19,13 @@ disables the default behaviour (writing the URL to the console). the event liste
 if you want to do more magic, you get {host, port} as second argument (host preformatted for an URL, so has brackets for IPv6) and the full untouched address object as the third argument.
 
 ```javascript
-var http = require('http');
+var http = require('http')
 http.createServer(function(req, res) {
-  res.write('Hello, world!');
-  res.end();
+  res.write('Hello, world!')
+  res.end()
 }).on('url', function(url) {
-  console.log('Arr, mateys! We be sailin\' at ' + url + '!');
-}).listen(0, require('./'));
+  console.log('Arr, mateys! We be sailin\' at ' + url + '!')
+}).listen(0, require('./'))
 ```
 
 output:
