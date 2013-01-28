@@ -1,6 +1,6 @@
 {
   "name": "listen-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tells you the URL for your HTTP server",
   "main": "index.js",
   "scripts": {
